@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+
+:root {
+	// color palette
+
+	--primary-clr-BeduOrange: 255, 95, 41;
+	--primary-clr-highlightBlue: 0, 43, 108;
+	--primary-clr-White: 255, 255, 255;
+	--secondary-clr-lightgray: 217, 217, 217;
+	--secondary-clr-mediumGray: 56, 65, 71;
+	--secondary-clr-darkGray: 15, 21, 25;
+
+	// font size
+	--font-size-12px: 0.75rem;
+	--font-size-14px: 0.875rem;
+	--font-size-16px: 1rem;
+	--font-size-18px: 1.125rem;
+	--font-size-20px: 1.25rem;
+	--font-size-24px: 1.5rem;
+	--font-size-28px: 1.75rem;
+	--font-size-32px: 2rem;
+	--font-size-36px: 2.25rem;
+	--font-size-40px: 2.5rem;
+	--font-size-48px: 3rem;
+	--font-size-56px: 3.5rem;
+	--font-size-64px: 4rem;
+
+	--ff-primary-montserrat: "Montserrat", sans-serif;
+	--ff-secondary-rubik: "Rubik", sans-serif;
+}
+// root media quiery for fonts
+
+@media (min-width: 1024px) {
+	:root {
+		--font-size-12px: 0.875rem;
+		--font-size-14px: 1rem;
+		--font-size-16px: 1.125rem;
+		--font-size-18px: 1.25rem;
+		--font-size-20px: 1.5rem;
+		--font-size-24px: 1.75rem;
+		--font-size-28px: 2rem;
+		--font-size-32px: 2.25rem;
+		--font-size-36px: 2.5rem;
+		--font-size-40px: 3rem;
+		--font-size-48px: 3.5rem;
+		--font-size-56px: 4rem;
+		--font-size-64px: 5rem;
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--ff-primary-montserrat);
+}
+
+p {
+	font-family: var(--ff-secondary-rubik);
+}
+body {
+	background-color: rgb(var(--secondary-clr-darkGray));
+}
+
+// /*/* utility classes *\*\ //
+
+// color classes
+.color-beduOrange {
+	color: rgb(var(--primary-clr-BeduOrange));
+}
+
+.color-highlightBlue {
+	color: rgb(var(--primary-clr-highlightBlue));
+}
+
+.color-White {
+	color: rgb(var(--primary-clr-White));
+}
+
+.color-grayDark {
+	color: rgb(var(--secondary-clr-darkGray));
+}
+.color-lightgray {
+	color: rgb(var(--secondary-clr-lightgray));
+}
+
+.color-mediumGray {
+	color: rgb(var(--secondary-clr-mediumGray));
+}
+
+// bg classes
+.bg-clr-beduOrange {
+	background-color: rgb(var(--primary-clr-BeduOrange));
+}
+
+.bg-clr-highlightBlue {
+	background-color: rgb(var(--primary-clr-highlightBlue));
+}
+
+.bg-clr-highlightWhite {
+	background-color: rgb(var(--primary-clr-highlightWhite));
+}
+
+.bg-clr-grayDark {
+	background-color: rgb(var(--secondary-clr-darkGray));
+}
+.bg-clr-lightgray {
+	background-color: rgb(var(--secondary-clr-lightgray));
+}
+
+.bg-clr-mediumGray {
+	background-color: rgb(var(--secondary-clr-mediumGray));
+}
+
+// font size
