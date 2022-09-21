@@ -1,8 +1,12 @@
 <h1 align="center">Hi 👋, I'm Bedushop</h1>
 <h3 align="center">A project created by a team developers with backend in mind</h3>
 
-<h3 align="left">Connect with me:</h3>
+<h3 align="left">Connect with Us:</h3>
 <p align="left">
+<a href= "#" > Miguel </a>
+<a href= "#" > Frank </a>
+<a href= "#" > Roman </a>
+<a href= "#" > Jesus </a>
 </p>
 
 <h3 align="left">Languages and Tools:</h3>
