@@ -1,0 +1,41 @@
+{
+  "name": "13-bedushop",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">Hi 👋, I'm Bedushop</h1>\r <h3 align=\"center\">A project created by a team developers with backend in mind</h3>",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --open --config webpack/webpack.dev.js",
+    "build": "webpack --config webpack/webpack.prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BeduTeam8/bedushopfrontb8.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BeduTeam8/bedushopfrontb8/issues"
+  },
+  "homepage": "https://github.com/BeduTeam8/bedushopfrontb8#readme",
+  "devDependencies": {
+
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.7.1",
+    "html-loader": "^4.1.0",
+    "html-webpack-plugin": "^5.5.0",
+    "jquery": "^3.6.0",
+    "mini-css-extract-plugin": "^2.6.1",
+    "popper.js": "^1.16.1",
+    "sass": "^1.54.4",
+    "sass-loader": "^13.0.2",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.10.0",
+    "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.0"
+  }
+}
