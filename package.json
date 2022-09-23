@@ -19,7 +19,6 @@
   },
   "homepage": "https://github.com/BeduTeam8/bedushopfrontb8#readme",
   "devDependencies": {
-
     "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^6.7.1",
     "html-loader": "^4.1.0",
@@ -36,6 +35,7 @@
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
-    "bootstrap": "^5.2.0"
+    "bootstrap": "^5.2.0",
+    "bootstrap-icons": "^1.9.1"
   }
 }

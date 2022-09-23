@@ -14,10 +14,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+
     <!-- Bootstrap CSS v5.2.0-beta1 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- css linking to remove later -->
+    <link rel="stylesheet" href="main.css">
 
+    <!-- boostrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 </head>
 `
 
@@ -46,36 +51,302 @@
                             <a class="nav-link" href="./aboutus.html">sobre nosotros</a>
                         </li>
                     </ul>
+                    <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <!-- Button trigger modal -->
+                            <button type="button"
+                                class="btn btn-primary margin-300-inline color-White ff-primary-Montserrat"
+                                data-bs-toggle="modal" data-bs-target="#modelLogin">
+                                ingresa
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn border-width-2px border-color-beduOrange margin-300-inline"
+                                data-bs-toggle="modal" data-bs-target="#modalRegister">
+                                Registrate
+                            </button>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
     </header>
 
 
+
+    <!-- Modal ingresa -->
+    <div class="modal fade" id="modelLogin" tabindex="-1" role="dialog" aria-labelledby="modalTitleId"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitleId">Ingresa</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div>
+                            <div class="mb-3">
+                                <label for="" class="form-label ">Email</label>
+                                <input type="text" class="form-control border-radius-64px padding-400-inline" name=""
+                                    id="" aria-describedby="helpId" placeholder="tucorreo@aqui">
+                            </div>
+                            <div class="mb-3">
+                                <label for="" class="form-label">Password</label>
+
+                                <i class="bi bi-eye-slash" id="togglePassword"> <input type="password"
+                                        class="form-control border-radius-64px padding-400-inline" name="password"
+                                        id="password" aria-describedby="helpId" placeholder="********"> </i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal Rgesitrate -->
+    <div class="modal fade" id="modalRegister" tabindex="-1" role="dialog" aria-labelledby="modalTitleId"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitleId">Registrate</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="mb-3">
+                            <label for="" class="form-label">Name</label>
+                            <input type="text" class="form-control  border-radius-64px padding-400-inline" name="" id=""
+                                aria-describedby="
+                                helpId" placeholder="usario">
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label">Email</label>
+                            <input type="email" class="form-control  border-radius-64px padding-400-inline" name=""
+                                id="" aria-describedby="
+                                helpId" placeholder="correo@aqui">
+
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label">Password</label>
+
+                            <i class="bi bi-eye-slash" id="togglePassword"> <input type="password"
+                                    class="form-control border-radius-64px padding-400-inline" name="password"
+                                    id="password" aria-describedby="helpId" placeholder="********"> </i>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" name="" id="vendedor" type="checkbox" value="checkedValue"
+                                aria-label="eres vendedor"> <label class="form-check-label" for="flexCheckChecked">
+                                Eres vendedor</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <main>
 
 
         <!-- 01 SECTION  SEARCH BAR  -->
         <section class=" ">
-            <div class="d-flex flex-column align-items-center justify-content-center w-100 mt-5">
-                <div class="testing w-50">
-                    <h1 class="color-White "> Buscabas algo? </h1>
+            <!-- 01.1 Search block -->
+            <article class="  d-flex flex-column align-items-center justify-content-center w-100 mt-5">
+                <div class=" w-50">
+                    <h1 class="text-uppercase ff-primary-Montserrat letter-spacing-2px font-weight-700 color-White">
+                        Buscabas algo? </h1>
                 </div>
                 <div class="mb-3 col-6">
-                    <input type="text" class="form-control" name="" id="" aria-describedby="helpId"
-                        placeholder="buscalo aqui!">
+                    <input type="text"
+                        class="form-control border-width-2px border-color-beduOrange border-radius-64px bg-clr-grayDark ff-secondary-Rubik text-lowercase font-size-16px padding-400-inline letter-spacing-2px color-White"
+                        name="" id="" aria-describedby="helpId" placeholder="buscalo aqui!">
                 </div>
-            </div>
+            </article>
+
+            <!-- 01.2 Lo mas Nuevo -->
+            <article class="container margin-400-vertical">
+                <div class="sectionHeader">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <div class="text-center text-md-left">
+                                    <h3
+                                        class="ff-primary-Montserrat font-weight-700 letter-spacing-4px color-White text-uppercase mb-0">
+                                        Lo mas Nuevo
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-grid margin-600-vertical margin-200-vertical ">
+                            <div
+                                class="product-card | fit-content margin-200 overflow-hidden border-radius-8px position-relative ">
+                                <div class="product-body  padding-400">
+                                    <h2
+                                        class="product-name | ff-primary-Montserrat font-weight-400 color-White font-size-16px text-uppercase ">
+                                        Product name
+                                    </h2>
+                                    <p
+                                        class="product-price | ff-primary-Montserrat font-weight-400 color-White font-size-16px text-uppercase ">
+                                        $750.00 mxn</p>
+                                    <!-- <button>ver producto</button> -->
+                                </div>
+
+                                <img src="./assets/Product_Bench.jpg">
+                            </div>
+                            <div
+                                class="product-card | fit-content margin-200 overflow-hidden border-radius-8px position-relative ">
+                                <div class="product-body  padding-400">
+                                    <h2
+                                        class="product-name | ff-primary-Montserrat font-weight-400 color-White font-size-16px text-uppercase ">
+                                        Product name
+                                    </h2>
+                                    <p
+                                        class="product-price | ff-primary-Montserrat font-weight-400 color-White font-size-16px text-uppercase ">
+                                        $750.00 mxn</p>
+                                    <!-- <button>ver producto</button> -->
+                                </div>
+
+                                <img src="./assets/Product_Camera.jpg">
+                            </div>
+                            <div
+                                class="product-card | fit-content margin-200 overflow-hidden border-radius-8px position-relative ">
+                                <div class="product-body  padding-400">
+                                    <h2
+                                        class="product-name | ff-primary-Montserrat font-weight-400 color-White font-size-16px text-uppercase ">
+                                        Product name
+                                    </h2>
+                                    <p
+                                        class="product-price | ff-primary-Montserrat font-weight-400 color-White font-size-16px text-uppercase ">
+                                        $750.00 mxn</p>
+                                    <!-- <button>ver producto</button> -->
+                                </div>
+
+                                <img src="./assets/Product_Car.jpg">
+                            </div>
+                            <div
+                                class="product-card | fit-content margin-200 overflow-hidden border-radius-8px position-relative ">
+                                <div class="product-body  padding-400">
+                                    <h2
+                                        class="product-name | ff-primary-Montserrat font-weight-400 color-White font-size-16px text-uppercase ">
+                                        Product name
+                                    </h2>
+                                    <p
+                                        class="product-price | ff-primary-Montserrat font-weight-400 color-White font-size-16px text-uppercase ">
+                                        $750.00 mxn</p>
+                                    <!-- <button>ver producto</button> -->
+                                </div>
+
+                                <img src="./assets/Product_Glasses.jpg">
+                            </div>
+                            <div
+                                class="product-card | fit-content margin-200 overflow-hidden border-radius-8px position-relative ">
+                                <div class="product-body  padding-400">
+                                    <h2
+                                        class="product-name | ff-primary-Montserrat font-weight-400 color-White font-size-16px text-uppercase ">
+                                        Product name
+                                    </h2>
+                                    <p
+                                        class="product-price | ff-primary-Montserrat font-weight-400 color-White font-size-16px text-uppercase ">
+                                        $750.00 mxn</p>
+                                    <!-- <button>ver producto</button> -->
+                                </div>
+
+                                <img src="./assets/Product_Headphone.jpg">
+                            </div>
+                            <div
+                                class="product-card | fit-content margin-200 overflow-hidden border-radius-8px position-relative ">
+                                <div class="product-body  padding-400">
+                                    <h2
+                                        class="product-name | ff-primary-Montserrat font-weight-400 color-White font-size-16px text-uppercase ">
+                                        Product name
+                                    </h2>
+                                    <p
+                                        class="product-price | ff-primary-Montserrat font-weight-400 color-White font-size-16px text-uppercase ">
+                                        $750.00 mxn</p>
+                                    <!-- <button>ver producto</button> -->
+                                </div>
+
+                                <img src="./assets/Product_Lipstick.jpg">
+                            </div>
+                            <div
+                                class="product-card | fit-content margin-200 overflow-hidden border-radius-8px position-relative ">
+                                <div class="product-body  padding-400">
+                                    <h2
+                                        class="product-name | ff-primary-Montserrat font-weight-400 color-White font-size-16px text-uppercase ">
+                                        Product name
+                                    </h2>
+                                    <p
+                                        class="product-price | ff-primary-Montserrat font-weight-400 color-White font-size-16px text-uppercase ">
+                                        $750.00 mxn</p>
+                                    <!-- <button>ver producto</button> -->
+                                </div>
+
+                                <img src="./assets/Product_Plant.jpg">
+                            </div>
+                            <div
+                                class="product-card | fit-content margin-200 overflow-hidden border-radius-8px position-relative ">
+                                <div class="product-body  padding-400">
+                                    <h2
+                                        class="product-name | ff-primary-Montserrat font-weight-400 color-White font-size-16px text-uppercase ">
+                                        Product name
+                                    </h2>
+                                    <p
+                                        class="product-price | ff-primary-Montserrat font-weight-400 color-White font-size-16px text-uppercase ">
+                                        $750.00 mxn</p>
+                                    <!-- <button>ver producto</button> -->
+                                </div>
+
+                                <img src="./assets/Product_Shoes.jpg">
+                            </div>
+                            <div
+                                class="product-card | fit-content margin-200 overflow-hidden border-radius-8px position-relative ">
+                                <div class="product-body  padding-400">
+                                    <h2
+                                        class="product-name | ff-primary-Montserrat font-weight-400 color-White font-size-16px text-uppercase ">
+                                        Product name
+                                    </h2>
+                                    <p
+                                        class="product-price | ff-primary-Montserrat font-weight-400 color-White font-size-16px text-uppercase ">
+                                        $750.00 mxn</p>
+                                    <!-- <button>ver producto</button> -->
+                                </div>
+
+                                <img src="./assets/Product_Watch.jpg">
+                            </div>
+                        </div>
+            </article>
+
+        </section>
 
 
+        <div class="container d-flex align-items-center flex-column padding-400-vertical margin-900-vertical ">
             <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
             <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_es4p9zph.json" background="transparent"
                 speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
-
             <h2 class=" color-beduOrange">we're working on this</h2>
-        </section>
-
+        </div>
     </main>
+
+
+
+
+
+
+
     <footer>
         <!-- place footer here -->
     </footer>
@@ -87,6 +358,51 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
         integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous">
         </script>
+
+
+    <!-- // boostrap modal \\ -->
+    <script>
+        var modelLogin = document.getElementById('modelLogin');
+
+        modelLogin.addEventListener('show.bs.modal', function (event) {
+            // Button that triggered the modal
+            let button = event.relatedTarget;
+            // Extract info from data-bs-* attributes
+            let recipient = button.getAttribute('data-bs-whatever');
+
+            // Use above variables to manipulate the DOM
+        });
+
+        var modalRegister = document.getElementById('modalRegister');
+
+        modalRegister.addEventListener('show.bs.modal', function (event) {
+            // Button that triggered the modal
+            let button = event.relatedTarget;
+            // Extract info from data-bs-* attributes
+            let recipient = button.getAttribute('data-bs-whatever');
+
+            // Use above variables to manipulate the DOM
+        });
+
+        const togglePassword = document
+            .querySelector('#togglePassword');
+
+        const password = document.querySelector('#password');
+
+        togglePassword.addEventListener('click', () => {
+
+            // Toggle the type attribute using
+            // getAttribure() method
+            const type = password
+                .getAttribute('type') === 'password' ?
+                'text' : 'password';
+
+            password.setAttribute('type', type);
+
+            // Toggle the eye and bi-eye icon
+            this.classList.toggle('bi-eye');
+        });
+    </script>
 </body>
 
 </html>
